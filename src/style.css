@@ -1,0 +1,198 @@
+body{
+    font-family: 'Poppins', sans-serif;    
+    margin: 0 auto;
+}
+main{
+    position: relative;    
+}
+.conteudo-1{
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+.conteudo-2{
+    position: absolute;
+    display: flex; 
+    flex-direction: column;   
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+    top: 0;
+}
+.conteudo-2 p.assinatura{
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    flex-direction: column;
+    height: 100%;        
+}
+.informacoes{    
+    margin-top: 10%;
+    left: 3%;
+}
+.informacoes .logo{
+    width: 35vw;
+    margin-bottom: 4%;
+    
+}
+.informacoes p{
+    margin-top: 8%;
+    
+}
+.informacoes p.descricao{
+    width: 100%;
+    font-size: 2vw;
+    line-height: 3.5vh;
+    filter: invert(1);
+}
+.informacoes p.assinatura{
+    font-size: 2vw;
+    margin-top: 2%;
+    filter: invert(1);
+}
+.botoes-carrossel{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.0vw;
+    top: 0;    
+}
+.botoes-carrossel .botao{    
+    width: 15px;
+    height: 15px;
+    margin-top: 52%;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+    z-index: 4;   
+}
+.botoes-carrossel .botao.selecionado{
+    background-color: #1d8346;
+}
+.menu-lateral{     
+    position: absolute;
+    top: 0;
+    right: 0;   
+    width: 3.5%;
+    height: 20%;
+    margin-top: 20%;
+    margin-right: 3%;     
+    z-index: 99999;   
+}
+.menu-lateral ul{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+.menu-lateral .icone{  
+    margin-bottom: 2%;
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+}
+.menu-lateral .icone:hover{
+    transform: scale(1.2);
+}
+.carrossel{ 
+    display: flex;   
+    top: 0;
+    left: 0;
+    z-index: -5;    
+}
+.carrossel .imagem{ 
+    width: 100vw;      
+    display: none;
+    animation: mudarImagem 0.7s;
+}
+.carrossel .imagem.ativa{
+    display: block;
+}
+@keyframes mudarImagem{
+    from{
+        opacity: 0.85;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* Section */
+section.brasil-e-o-mundo{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    
+
+    
+}
+.conteudo-3{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    top: 2vh;
+    gap: 6vw;
+    padding-bottom: 5vh;
+
+}
+.conteudo-3 h3{
+    margin-bottom: 3vh;
+}
+.lecois-maranhenses, .jalapao, .zakynthos, .cenotes-de-tulum, .the-grand-canyon, .wulingyuan {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 300px;
+    height: 270px;
+}
+.conteudo-img{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+.lecois-maranhenses h4, .jalapao h4, .zakynthos h4, .cenotes-de-tulum h4, .the-grand-canyon, .wulingyuan h4 {
+    font-size: 14px;
+}
+.lecois-maranhenses p, .jalapao p, .zakynthos p, .cenotes-de-tulum p, .the-grand-canyon p, .wulingyuan p  {
+    font-size: 12PX;
+}
+.lecois-maranhenses img, .jalapao img, .zakynthos img, .cenotes-de-tulum img, .the-grand-canyon img, .wulingyuan img {
+    width: 300px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.lecois-maranhenses img:hover{
+    box-shadow: .05em 0 0.4em rgb(0, 128, 128);
+    transform: scale(1.02);    
+}
+.jalapao img:hover{
+    box-shadow: .05em 0 0.4em rgb(0, 128, 128);
+    transform: scale(1.02);    
+}
+.zakynthos img:hover{
+    box-shadow: .05em 0 0.4em rgb(0, 128, 128);
+    transform: scale(1.02);    
+}
+.cenotes-de-tulum img:hover{
+    box-shadow: .05em 0 0.4em rgb(0, 128, 128);
+    transform: scale(1.02);    
+}
+.the-grand-canyon img:hover{
+    box-shadow: .05em 0 0.4em rgb(0, 128, 128);
+    transform: scale(1.02);    
+}
+.wulingyuan img:hover{
+    box-shadow: .05em 0 0.4em rgb(0, 128, 128);
+    transform: scale(1.02);    
+}
+
